@@ -13,6 +13,7 @@ const gateway = new ApolloGateway({
 
 const server = new ApolloServer({
   gateway,
+  introspection: true,
 });
 
 server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
