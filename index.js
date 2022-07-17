@@ -9,7 +9,10 @@ const gateway = new ApolloGateway({
     subgraphs: [
       { name: "users", url: "https://gql-users-service.herokuapp.com/graphql" },
       { name: "posts", url: "https://gql-posts-service.herokuapp.com/graphql" },
-      { name: "posts", url: "https://gql-address-service.herokuapp.com/graphql" },
+      {
+        name: "address",
+        url: "https://gql-address-service.herokuapp.com/graphql",
+      },
       // { name: "users", url: "http://localhost:8001/graphql" },
       // { name: "posts", url: "http://localhost:8002/graphql" },
       // { name: "address", url: "http://localhost:8003/graphql" },
